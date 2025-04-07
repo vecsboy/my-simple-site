@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vec</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: #000;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header {
+      padding: 20px;
+      font-size: 24px;
+      font-weight: bold;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .container {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .cta-button {
+      background-color: #000;
+      color: #fff;
+      padding: 20px 30px;
+      font-size: 18px;
+      border: none;
+      cursor: pointer;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #333;
+    }
+
+    .response-text {
+      margin-top: 20px;
+      font-size: 20px;
+      display: none;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">Vec</div>
+
+  <div class="container">
+    <div>
+      <button class="cta-button" onclick="showResponse()">The Billion Dollar Question</button>
+      <div class="response-text" id="response">
+        Which decade am I going to see your snap next in?
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function showResponse() {
+      document.getElementById('response').style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
